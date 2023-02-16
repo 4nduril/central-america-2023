@@ -1,0 +1,37 @@
+{
+	"name": "central-america-2023",
+	"version": "1.0.0",
+	"description": "Images from travelling to Central America",
+	"main": "index.js",
+	"scripts": {
+		"dev": "next",
+		"build": "next build",
+		"start": "next start",
+		"test": "jest",
+		"build:images": "node ./scripts/create-image-data.js"
+	},
+	"author": "Tobias Barth <npm@tobias-barth.net> (https://tobias-barth.net/)",
+	"license": "ISC",
+	"dependencies": {
+		"@emotion/react": "^11.10.5",
+		"@emotion/server": "^11.10.0",
+		"@emotion/styled": "^11.10.5",
+		"@mui/material": "^5.11.9",
+		"easyimage": "^3.1.1",
+		"next": "^13.1.6",
+		"prop-types": "^15.7.2",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-grid-gallery": "^1.0.0",
+		"react-image-lightbox": "^5.1.4",
+		"react-jss": "^8.6.1"
+	},
+	"devDependencies": {
+		"eslint": "^5.16.0",
+		"eslint-config-prettier": "^4.1.0",
+		"eslint-plugin-prettier": "^3.0.1",
+		"eslint-plugin-react": "^7.12.4",
+		"jest": "^25.1.0",
+		"prettier": "^1.16.4"
+	}
+}
