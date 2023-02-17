@@ -7,6 +7,15 @@ import Toolbar from "@mui/material/Toolbar";
 import imgs from "../public/data/grid-gallery-data.json";
 import { Box } from "@mui/system";
 import "react-image-lightbox/style.css";
+import Image from "next/image";
+
+const Thumbnail = (props) => (
+  <Image
+    width={props.item.width}
+    height={props.item.height}
+    {...props.imageProps}
+  />
+);
 
 const Index = () => {
   const [index, setIndex] = useState(-1);
@@ -47,6 +56,7 @@ const Index = () => {
         overflow="auto"
       >
         <Gallery
+          thumbnailImageComponent={Thumbnail}
           images={imgs}
           onClick={handleClick}
           enableImageSelection={false}
